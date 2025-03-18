@@ -1,0 +1,21 @@
+{
+  "item.blafecho.pink_garnet": "Pink Garnet",
+  "item.blafecho.raw_pink_garnet": "Raw Pink Garnet",
+  "item.blafecho.chisel": "Chisel",
+  "item.blafecho.cauli_flower": "Cauli Flower",
+  "item.blafecho.starlight_ashes": "Starlight Ashes",
+
+  "block.blafecho.pink_garnet_block": "Pink Garnet Block",
+  "block.blafecho.raw_pink_garnet_block": "Raw Pink Garnet Block",
+  "block.blafecho.pink_garnet_ore": "Pink Garnet Ore",
+  "block.blafecho.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+  "block.blafecho.magic_block": "Magic Block",
+
+  "itemgroup.blafecho.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.blafecho.pink_garnet_blocks": "Pink Garnet Blocks",
+
+  "tooltip.blafecho.magic_block.tooltip": "This block can transform pink garnet to §eDIAMONDS§r",
+  "tooltip.blafecho.chisel.tooltip": "Transform some blocks to bricks",
+  "tooltip.blafecho.press_shift.tooltip" : "Press §eShift§r for more information",
+  "tooltip.blafecho.cauliflower.tooltip": "Yummy!"
+}
