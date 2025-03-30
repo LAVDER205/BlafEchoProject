@@ -3,6 +3,7 @@ package net.lavder.blafecho.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.lavder.blafecho.block.ModBlocks;
+import net.lavder.blafecho.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -36,5 +37,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE); // connecting to other fences
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK)
+                .addTag(BlockTags.NEEDS_IRON_TOOL); // we can mine everything iron mineable with pink garnet
+
+
     }
 }

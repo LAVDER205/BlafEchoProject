@@ -10,6 +10,7 @@ import net.minecraft.data.server.tag.ItemTagProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,5 +27,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.GOLD_INGOT)
                 .add(Items.COAL)
                 .add(Items.APPLE);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS) // to be enchantable
+                .add(ModItems.PINK_GARNET_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.PINK_GARNET_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.PINK_GARNET_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.PINK_GARNET_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.PINK_GARNET_HOE);
     }
 }

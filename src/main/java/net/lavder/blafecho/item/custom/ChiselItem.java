@@ -1,6 +1,7 @@
 package net.lavder.blafecho.item.custom;
 
 import net.lavder.blafecho.block.ModBlocks;
+import net.lavder.blafecho.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -47,6 +48,9 @@ public class ChiselItem extends Item {
                         item ->context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND)); // damaging item
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos()); // now this itemstack REREMBERS last clicked block coordinates
+                // u can do this with vanilla components too!
             }
         }
         return ActionResult.SUCCESS; // adds right click animation
@@ -56,9 +60,13 @@ public class ChiselItem extends Item {
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.blafecho.chisel.tooltip"));
+            if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+                tooltip.add(Text.literal("Last block changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
+            }
         } else {
             tooltip.add(Text.translatable("tooltip.blafecho.press_shift.tooltip"));
         }
+
         super.appendTooltip(stack, context, tooltip, type);
     }
 }
