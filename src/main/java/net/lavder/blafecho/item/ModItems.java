@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lavder.blafecho.BlafEcho;
 import net.lavder.blafecho.item.custom.ChiselItem;
 import net.lavder.blafecho.item.custom.HammerItem;
+import net.lavder.blafecho.item.custom.ModArmorItem;
 import net.lavder.blafecho.item.custom.ModArmorMaterials;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -53,7 +54,7 @@ public class ModItems {
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))));
 
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,  ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,  ArmorItem.Type.HELMET, new Item.Settings() // change only 1 to get effects working
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,  ArmorItem.Type.CHESTPLATE, new Item.Settings()
@@ -64,6 +65,9 @@ public class ModItems {
     public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,  ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
 
     // HELPING METHODS
