@@ -15,6 +15,7 @@
   "item.blafecho.pink_garnet_leggings": "Pink Garnet Leggings",
   "item.blafecho.pink_garnet_boots": "Pink Garnet Boots",
   "item.blafecho.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+  "item.blafecho.lavder_armor_trim_smithing_template": "LAVDER Smithing Template",
 
 
   "block.blafecho.pink_garnet_block": "Pink Garnet Block",
@@ -40,5 +41,8 @@
   "tooltip.blafecho.magic_block.tooltip": "This block can transform pink garnet to §eDIAMONDS§r",
   "tooltip.blafecho.chisel.tooltip": "Transform some blocks to bricks",
   "tooltip.blafecho.press_shift.tooltip" : "Press §eShift§r for more information",
-  "tooltip.blafecho.cauliflower.tooltip": "Yummy!"
+  "tooltip.blafecho.cauliflower.tooltip": "Yummy!",
+
+  "trim_material.blafecho.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.blafecho.lavder": "LAVDER Armor Pattern"
 }

@@ -48,6 +48,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK)) // unlock recipe in book
                 .offerTo(exporter, Identifier.of(BlafEcho.MOD_ID, "raw_pink_garnet_from_magic_block"));
 
-
+        offerSmithingTrimRecipe(exporter, ModItems.LAVDER_SMITHING_TEMPLATE, Identifier.of(BlafEcho.MOD_ID, "lavder"));
     }
 }
