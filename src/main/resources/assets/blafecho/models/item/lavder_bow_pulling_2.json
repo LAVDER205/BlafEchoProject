@@ -1,0 +1,6 @@
+{
+    "parent": "blafecho:item/lavder_bow",
+    "textures": {
+        "layer0": "blafecho:item/lavder_bow_pulling_2"
+    }
+}

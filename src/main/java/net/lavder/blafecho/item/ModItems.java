@@ -74,6 +74,9 @@ public class ModItems {
     public static final Item LAVDER_SMITHING_TEMPLATE = registerItem("lavder_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(BlafEcho.MOD_ID, "lavder"), FeatureFlags.VANILLA));
 
+    public static final Item LAVDER_BOW = registerItem("lavder_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
+
 
     // HELPING METHODS
     private static Item registerItem(String name, Item item) {
