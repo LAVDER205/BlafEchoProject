@@ -9,6 +9,7 @@ import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.component.ModDataComponentTypes;
 import net.lavder.blafecho.item.ModItemGroups;
 import net.lavder.blafecho.item.ModItems;
+import net.lavder.blafecho.sound.ModSounds;
 import net.lavder.blafecho.util.HammerUsageEvent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -32,6 +33,7 @@ public class BlafEcho implements ModInitializer {
 		ModBlocks.registerModBlock();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 

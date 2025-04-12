@@ -6,6 +6,7 @@ import net.lavder.blafecho.item.custom.ChiselItem;
 import net.lavder.blafecho.item.custom.HammerItem;
 import net.lavder.blafecho.item.custom.ModArmorItem;
 import net.lavder.blafecho.item.custom.ModArmorMaterials;
+import net.lavder.blafecho.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -76,6 +77,9 @@ public class ModItems {
 
     public static final Item LAVDER_BOW = registerItem("lavder_bow",
             new BowItem(new Item.Settings().maxDamage(500)));
+
+    public static final Item TNT_MUSIC_DISC = registerItem("tnt_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.TNT_KEY).maxCount(1)));
 
 
     // HELPING METHODS

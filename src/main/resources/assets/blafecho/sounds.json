@@ -1,0 +1,46 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.blafecho.chisel_use",
+    "sounds": [
+      "blafecho:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.blafecho.magic_block_break",
+    "sounds": [
+      "blafecho:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.blafecho.magic_block_step",
+    "sounds": [
+      "blafecho:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.blafecho.magic_block_place",
+    "sounds": [
+      "blafecho:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.blafecho.magic_block_hit",
+    "sounds": [
+      "blafecho:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.blafecho.magic_block_fall",
+    "sounds": [
+      "blafecho:magic_block_fall"
+    ]
+  },
+  "tnt": {
+    "sounds": [
+      {
+        "name": "blafecho:tnt",
+        "stream": true
+      }
+    ]
+  }
+}

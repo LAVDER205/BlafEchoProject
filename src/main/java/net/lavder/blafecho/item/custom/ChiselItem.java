@@ -2,6 +2,7 @@ package net.lavder.blafecho.item.custom;
 
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.component.ModDataComponentTypes;
+import net.lavder.blafecho.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -47,7 +48,7 @@ public class ChiselItem extends Item {
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item ->context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND)); // damaging item
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos()); // now this itemstack REREMBERS last clicked block coordinates
                 // u can do this with vanilla components too!
