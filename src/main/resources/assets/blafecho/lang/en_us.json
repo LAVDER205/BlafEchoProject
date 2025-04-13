@@ -20,6 +20,10 @@
   "item.blafecho.tnt_music_disc": "TNT Music Disc",
   "item.blafecho.tnt_music_disc.desc": "CaptainSparklez - TNT (CC0)",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
 
   "block.blafecho.pink_garnet_block": "Pink Garnet Block",
   "block.blafecho.raw_pink_garnet_block": "Raw Pink Garnet Block",
@@ -37,6 +41,8 @@
   "block.blafecho.pink_garnet_wall": "Pink Garnet Wall",
   "block.blafecho.pink_garnet_door": "Pink Garnet Door",
   "block.blafecho.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+
+  "effect.blafecho.slimey": "Slimey",
 
   "itemgroup.blafecho.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.blafecho.pink_garnet_blocks": "Pink Garnet Blocks",

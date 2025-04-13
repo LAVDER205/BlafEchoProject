@@ -4,17 +4,21 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.component.ModDataComponentTypes;
+import net.lavder.blafecho.effect.ModEffects;
 import net.lavder.blafecho.item.ModItemGroups;
 import net.lavder.blafecho.item.ModItems;
+import net.lavder.blafecho.potion.ModPotions;
 import net.lavder.blafecho.sound.ModSounds;
 import net.lavder.blafecho.util.HammerUsageEvent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
@@ -35,6 +39,9 @@ public class BlafEcho implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 		ModSounds.registerSounds();
 
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
+
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
@@ -48,6 +55,10 @@ public class BlafEcho implements ModInitializer {
 				return ActionResult.PASS;
 			}
 			return ActionResult.PASS;
+		});
+
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION);
 		});
 	}
 }
