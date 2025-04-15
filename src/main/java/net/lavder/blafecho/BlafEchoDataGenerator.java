@@ -3,6 +3,7 @@ package net.lavder.blafecho;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.lavder.blafecho.datagen.*;
+import net.lavder.blafecho.enchantment.ModEnchantments;
 import net.lavder.blafecho.trim.ModTrimMaterials;
 import net.lavder.blafecho.trim.ModTrimPatterns;
 import net.minecraft.registry.RegistryBuilder;
@@ -26,5 +27,6 @@ public class BlafEchoDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }

@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.component.ModDataComponentTypes;
 import net.lavder.blafecho.effect.ModEffects;
+import net.lavder.blafecho.enchantment.ModEnchantmentEffects;
 import net.lavder.blafecho.item.ModItemGroups;
 import net.lavder.blafecho.item.ModItems;
 import net.lavder.blafecho.potion.ModPotions;
@@ -41,6 +42,8 @@ public class BlafEcho implements ModInitializer {
 
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+
+		ModEnchantmentEffects.registerEnchantmentEffect();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 
