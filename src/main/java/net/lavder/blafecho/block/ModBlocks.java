@@ -2,10 +2,12 @@ package net.lavder.blafecho.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lavder.blafecho.BlafEcho;
+import net.lavder.blafecho.block.custom.CauliFlowerCropBlock;
 import net.lavder.blafecho.block.custom.MagicBlock;
 import net.lavder.blafecho.block.custom.PinkGarnetLampBlock;
 import net.lavder.blafecho.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -66,6 +68,10 @@ public class ModBlocks {
             new PinkGarnetLampBlock(AbstractBlock.Settings.create()
                     .strength(1f).requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliFlowerCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
 
 
 
@@ -76,6 +82,10 @@ public class ModBlocks {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(BlafEcho.MOD_ID, name), block);
     } // register block with block item
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(BlafEcho.MOD_ID, name), block);
+    } // register block without block item
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(BlafEcho.MOD_ID, name),

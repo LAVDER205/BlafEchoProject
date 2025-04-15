@@ -17,6 +17,9 @@
   "item.blafecho.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
   "item.blafecho.lavder_armor_trim_smithing_template": "LAVDER Smithing Template",
   "item.blafecho.lavder_bow": "LAVDER Bow",
+  "item.blafecho.cauliflower_seeds": "Cauliflower Seeds",
+  "item.blafecho.lavder_bow": "LAVDER Bow",
+
   "item.blafecho.tnt_music_disc": "TNT Music Disc",
   "item.blafecho.tnt_music_disc.desc": "CaptainSparklez - TNT (CC0)",
 
@@ -41,6 +44,8 @@
   "block.blafecho.pink_garnet_wall": "Pink Garnet Wall",
   "block.blafecho.pink_garnet_door": "Pink Garnet Door",
   "block.blafecho.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+
+  "block.blafecho.cauliflower_crop": "Cauliflower Crop",
 
   "effect.blafecho.slimey": "Slimey",
 
