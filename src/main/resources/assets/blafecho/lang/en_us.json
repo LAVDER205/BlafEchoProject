@@ -18,7 +18,7 @@
   "item.blafecho.lavder_armor_trim_smithing_template": "LAVDER Smithing Template",
   "item.blafecho.lavder_bow": "LAVDER Bow",
   "item.blafecho.cauliflower_seeds": "Cauliflower Seeds",
-  "item.blafecho.lavder_bow": "LAVDER Bow",
+  "item.blafecho.honey_berries": "Honey Berries",
 
   "item.blafecho.tnt_music_disc": "TNT Music Disc",
   "item.blafecho.tnt_music_disc.desc": "CaptainSparklez - TNT (CC0)",
@@ -46,6 +46,7 @@
   "block.blafecho.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
   "block.blafecho.cauliflower_crop": "Cauliflower Crop",
+  "block.blafecho.honey_berry_bush": "Honey Berry Bush",
 
   "effect.blafecho.slimey": "Slimey",
 

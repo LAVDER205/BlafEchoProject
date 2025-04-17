@@ -52,7 +52,7 @@ public class BlafEcho implements ModInitializer {
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			if(entity instanceof SheepEntity SheepEntity && !world.isClient) {
 				if(player.getMainHandStack().getItem() == Items.END_ROD) {
-					player.sendMessage(Text.literal("The Player just hit a ship with an end rod"));
+					player.sendMessage(Text.literal("The Player just hit a sheep with an end rod"));
 					player.getMainHandStack().decrement(1);
 					SheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 6));
 				}

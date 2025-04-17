@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.block.custom.CauliFlowerCropBlock;
+import net.lavder.blafecho.block.custom.HoneyBerryBushBlock;
 import net.lavder.blafecho.block.custom.PinkGarnetLampBlock;
 import net.lavder.blafecho.item.ModItems;
 import net.minecraft.data.client.*;
@@ -40,6 +41,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliFlowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6); // seeds automatically
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.HONEY_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                HoneyBerryBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

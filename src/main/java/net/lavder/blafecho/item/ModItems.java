@@ -8,6 +8,7 @@ import net.lavder.blafecho.item.custom.HammerItem;
 import net.lavder.blafecho.item.custom.ModArmorItem;
 import net.lavder.blafecho.item.custom.ModArmorMaterials;
 import net.lavder.blafecho.sound.ModSounds;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -84,6 +85,9 @@ public class ModItems {
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
+    public static final Item HONEY_BERRIES = registerItem("honey_berries",
+            new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
 
 
     // HELPING METHODS
