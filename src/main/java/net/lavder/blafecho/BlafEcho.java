@@ -16,6 +16,7 @@ import net.lavder.blafecho.item.ModItems;
 import net.lavder.blafecho.potion.ModPotions;
 import net.lavder.blafecho.sound.ModSounds;
 import net.lavder.blafecho.util.HammerUsageEvent;
+import net.lavder.blafecho.world.gen.ModWorldGeneration;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
@@ -45,6 +46,8 @@ public class BlafEcho implements ModInitializer {
 		ModPotions.registerPotions();
 
 		ModEnchantmentEffects.registerEnchantmentEffect();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 

@@ -6,6 +6,8 @@ import net.lavder.blafecho.datagen.*;
 import net.lavder.blafecho.enchantment.ModEnchantments;
 import net.lavder.blafecho.trim.ModTrimMaterials;
 import net.lavder.blafecho.trim.ModTrimPatterns;
+import net.lavder.blafecho.world.ModConfiguredFeatures;
+import net.lavder.blafecho.world.ModPlacedFeatures;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -28,5 +30,8 @@ public class BlafEchoDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }
