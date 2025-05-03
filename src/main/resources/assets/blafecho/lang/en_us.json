@@ -50,6 +50,14 @@
   "block.blafecho.cauliflower_crop": "Cauliflower Crop",
   "block.blafecho.honey_berry_bush": "Honey Berry Bush",
 
+  "block.blafecho.driftwood_log": "Driftwood Log",
+  "block.blafecho.driftwood_wood": "Driftwood Wood",
+  "block.blafecho.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.blafecho.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.blafecho.driftwood_planks": "Driftwood Planks",
+  "block.blafecho.driftwood_leaves": "Driftwood Leaves",
+  "block.blafecho.driftwood_sapling": "Driftwood Sapling",
+
   "effect.blafecho.slimey": "Slimey",
 
   "painting.blafecho.saw_them.title": "Saw Them",

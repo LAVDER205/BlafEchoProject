@@ -2,9 +2,11 @@ package net.lavder.blafecho.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.item.ModItems;
 import net.lavder.blafecho.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.PlantBlock;
 import net.minecraft.data.DataOutput;
 import net.minecraft.data.server.tag.ItemTagProvider;
 import net.minecraft.item.Item;
@@ -50,5 +52,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.LAVDER_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.DRIFTWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS) // recipes like sticks etc.
+                .add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
     }
 }
