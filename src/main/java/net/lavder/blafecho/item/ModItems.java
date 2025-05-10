@@ -3,6 +3,7 @@ package net.lavder.blafecho.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lavder.blafecho.BlafEcho;
 import net.lavder.blafecho.block.ModBlocks;
+import net.lavder.blafecho.entity.ModEntities;
 import net.lavder.blafecho.item.custom.ChiselItem;
 import net.lavder.blafecho.item.custom.HammerItem;
 import net.lavder.blafecho.item.custom.ModArmorItem;
@@ -88,6 +89,9 @@ public class ModItems {
 
     public static final Item HONEY_BERRIES = registerItem("honey_berries",
             new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
+
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
+            new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
 
 
     // HELPING METHODS

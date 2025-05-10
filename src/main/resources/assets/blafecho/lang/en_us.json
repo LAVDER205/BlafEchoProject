@@ -27,6 +27,8 @@
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
 
+  "item.blafecho.mantis_spawn_egg": "Mantis Spawn Egg",
+
 
   "block.blafecho.pink_garnet_block": "Pink Garnet Block",
   "block.blafecho.raw_pink_garnet_block": "Raw Pink Garnet Block",
@@ -78,5 +80,7 @@
   "tooltip.blafecho.cauliflower.tooltip": "Yummy!",
 
   "trim_material.blafecho.pink_garnet": "Pink Garnet Material",
-  "trim_pattern.blafecho.lavder": "LAVDER Armor Pattern"
+  "trim_pattern.blafecho.lavder": "LAVDER Armor Pattern",
+
+  "entity.blafecho.mantis": "Mantis"
 }

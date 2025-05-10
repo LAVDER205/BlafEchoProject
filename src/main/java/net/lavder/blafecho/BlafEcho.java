@@ -4,11 +4,14 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.component.ModDataComponentTypes;
 import net.lavder.blafecho.effect.ModEffects;
 import net.lavder.blafecho.enchantment.ModEnchantmentEffects;
+import net.lavder.blafecho.entity.ModEntities;
+import net.lavder.blafecho.entity.custom.MantisEntity;
 import net.lavder.blafecho.item.ModItemGroups;
 import net.lavder.blafecho.item.ModItems;
 import net.lavder.blafecho.potion.ModPotions;
@@ -48,6 +51,8 @@ public class BlafEcho implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
+		ModEntities.registerModEntities();
+
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
@@ -79,5 +84,7 @@ public class BlafEcho implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60); // FireBlock for more info
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }
