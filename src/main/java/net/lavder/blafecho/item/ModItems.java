@@ -4,10 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lavder.blafecho.BlafEcho;
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.entity.ModEntities;
-import net.lavder.blafecho.item.custom.ChiselItem;
-import net.lavder.blafecho.item.custom.HammerItem;
-import net.lavder.blafecho.item.custom.ModArmorItem;
-import net.lavder.blafecho.item.custom.ModArmorMaterials;
+import net.lavder.blafecho.item.custom.*;
 import net.lavder.blafecho.sound.ModSounds;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
@@ -92,6 +89,9 @@ public class ModItems {
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
+
+    public static final Item TOMAHAWK = registerItem("tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
 
 
     // HELPING METHODS

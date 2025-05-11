@@ -8,6 +8,8 @@ import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.entity.ModEntities;
 import net.lavder.blafecho.entity.client.MantisModel;
 import net.lavder.blafecho.entity.client.MantisRenderer;
+import net.lavder.blafecho.entity.client.TomahawkProjectileModel;
+import net.lavder.blafecho.entity.client.TomahawkProjectileRenderer;
 import net.lavder.blafecho.util.ModModelPredicates;
 import net.minecraft.client.render.RenderLayer;
 
@@ -29,5 +31,8 @@ public class BlafEchoClient implements ClientModInitializer {
         // Entities
         EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS, MantisModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
     }
 }

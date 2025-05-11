@@ -29,6 +29,8 @@
 
   "item.blafecho.mantis_spawn_egg": "Mantis Spawn Egg",
 
+  "item.blafecho.tomahawk": "Tomahawk",
+
 
   "block.blafecho.pink_garnet_block": "Pink Garnet Block",
   "block.blafecho.raw_pink_garnet_block": "Raw Pink Garnet Block",
@@ -82,5 +84,6 @@
   "trim_material.blafecho.pink_garnet": "Pink Garnet Material",
   "trim_pattern.blafecho.lavder": "LAVDER Armor Pattern",
 
-  "entity.blafecho.mantis": "Mantis"
+  "entity.blafecho.mantis": "Mantis",
+  "entity.blafecho.tomahawk": "Tomahawk"
 }
