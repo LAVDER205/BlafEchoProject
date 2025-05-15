@@ -6,10 +6,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.lavder.blafecho.block.ModBlocks;
 import net.lavder.blafecho.entity.ModEntities;
-import net.lavder.blafecho.entity.client.MantisModel;
-import net.lavder.blafecho.entity.client.MantisRenderer;
-import net.lavder.blafecho.entity.client.TomahawkProjectileModel;
-import net.lavder.blafecho.entity.client.TomahawkProjectileRenderer;
+import net.lavder.blafecho.entity.client.*;
 import net.lavder.blafecho.util.ModModelPredicates;
 import net.minecraft.client.render.RenderLayer;
 
@@ -34,5 +31,7 @@ public class BlafEchoClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
     }
 }

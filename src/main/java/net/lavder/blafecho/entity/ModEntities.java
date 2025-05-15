@@ -1,6 +1,7 @@
 package net.lavder.blafecho.entity;
 
 import net.lavder.blafecho.BlafEcho;
+import net.lavder.blafecho.entity.custom.ChairEntity;
 import net.lavder.blafecho.entity.custom.MantisEntity;
 import net.lavder.blafecho.entity.custom.TomahawkProjectileEntity;
 import net.minecraft.entity.EntityType;
@@ -20,6 +21,11 @@ public class ModEntities {
             Identifier.of(BlafEcho.MOD_ID, "tomahawk"),
             EntityType.Builder.<TomahawkProjectileEntity>create(TomahawkProjectileEntity::new, SpawnGroup.MISC)
                     .dimensions(0.5f, 1.15f).build());
+
+    public static final EntityType<ChairEntity> CHAIR = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(BlafEcho.MOD_ID, "chair_entity"),
+            EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 0.5f).build());
 
     // HELPING METHOD
     public static void registerModEntities() {

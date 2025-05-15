@@ -93,6 +93,9 @@ public class ModItems {
     public static final Item TOMAHAWK = registerItem("tomahawk",
             new TomahawkItem(new Item.Settings().maxCount(16)));
 
+    public static final Item SPECTRE_STAFF = registerItem("spectre_staff",
+            new Item(new Item.Settings().maxCount(1)));
+
 
     // HELPING METHODS
     private static Item registerItem(String name, Item item) {

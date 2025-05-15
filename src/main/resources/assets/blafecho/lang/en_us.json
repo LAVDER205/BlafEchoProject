@@ -30,6 +30,7 @@
   "item.blafecho.mantis_spawn_egg": "Mantis Spawn Egg",
 
   "item.blafecho.tomahawk": "Tomahawk",
+  "item.blafecho.spectre_staff": "Spectre Staff",
 
 
   "block.blafecho.pink_garnet_block": "Pink Garnet Block",
@@ -61,6 +62,8 @@
   "block.blafecho.driftwood_planks": "Driftwood Planks",
   "block.blafecho.driftwood_leaves": "Driftwood Leaves",
   "block.blafecho.driftwood_sapling": "Driftwood Sapling",
+
+  "block.blafecho.chair": "Chair",
 
   "effect.blafecho.slimey": "Slimey",
 
