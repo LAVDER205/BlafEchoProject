@@ -88,5 +88,7 @@
   "trim_pattern.blafecho.lavder": "LAVDER Armor Pattern",
 
   "entity.blafecho.mantis": "Mantis",
-  "entity.blafecho.tomahawk": "Tomahawk"
+  "entity.blafecho.tomahawk": "Tomahawk",
+
+  "entity.minecraft.villager.blafecho.alchemist": "Alchemist"
 }
