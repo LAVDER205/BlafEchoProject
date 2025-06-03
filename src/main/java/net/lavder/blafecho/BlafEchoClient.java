@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.lavder.blafecho.block.ModBlocks;
+import net.lavder.blafecho.block.entity.ModBlockEntities;
+import net.lavder.blafecho.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.lavder.blafecho.entity.ModEntities;
 import net.lavder.blafecho.entity.client.*;
 import net.lavder.blafecho.particle.ModParticles;
@@ -13,6 +15,8 @@ import net.lavder.blafecho.particle.PinkGarnetParticle;
 import net.lavder.blafecho.util.ModModelPredicates;
 import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 
 public class BlafEchoClient implements ClientModInitializer {
     @Override
@@ -39,5 +43,7 @@ public class BlafEchoClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
     }
 }

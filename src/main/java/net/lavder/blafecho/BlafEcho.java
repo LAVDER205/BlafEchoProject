@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.*;
 import net.lavder.blafecho.block.ModBlocks;
+import net.lavder.blafecho.block.entity.ModBlockEntities;
 import net.lavder.blafecho.component.ModDataComponentTypes;
 import net.lavder.blafecho.effect.ModEffects;
 import net.lavder.blafecho.enchantment.ModEnchantmentEffects;
@@ -63,8 +64,9 @@ public class BlafEcho implements ModInitializer {
 		ModVillagers.registerVillagers();
 
 		ModParticles.registerParticles();
-
 		ModLootTableModifiers.modifyLootTables();
+
+		ModBlockEntities.registerBlockEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 
