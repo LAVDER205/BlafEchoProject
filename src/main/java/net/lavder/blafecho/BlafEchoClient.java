@@ -12,7 +12,11 @@ import net.lavder.blafecho.entity.ModEntities;
 import net.lavder.blafecho.entity.client.*;
 import net.lavder.blafecho.particle.ModParticles;
 import net.lavder.blafecho.particle.PinkGarnetParticle;
+import net.lavder.blafecho.screen.ModScreenHandlers;
+import net.lavder.blafecho.screen.custom.PedestalScreen;
 import net.lavder.blafecho.util.ModModelPredicates;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
@@ -45,5 +49,6 @@ public class BlafEchoClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
+        HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
     }
 }
