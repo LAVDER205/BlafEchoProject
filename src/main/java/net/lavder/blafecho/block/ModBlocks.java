@@ -101,6 +101,9 @@ public class ModBlocks {
     public static final Block PEDESTAL = registerBlock("pedestal",
             new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
 
+    public static final Block GROWTH_CHAMBER = registerBlock("growth_chamber",
+            new GrowthChamberBlock(AbstractBlock.Settings.create()));
+
 
 
 
