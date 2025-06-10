@@ -18,6 +18,7 @@ import net.lavder.blafecho.item.ModItemGroups;
 import net.lavder.blafecho.item.ModItems;
 import net.lavder.blafecho.particle.ModParticles;
 import net.lavder.blafecho.potion.ModPotions;
+import net.lavder.blafecho.recipe.ModRecipes;
 import net.lavder.blafecho.screen.ModScreenHandlers;
 import net.lavder.blafecho.sound.ModSounds;
 import net.lavder.blafecho.util.HammerUsageEvent;
@@ -69,6 +70,8 @@ public class BlafEcho implements ModInitializer {
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandler();
+
+		ModRecipes.registerRecipes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600); // u can do this like a previous 2 ^^
 

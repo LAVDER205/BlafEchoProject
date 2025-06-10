@@ -1,0 +1,9 @@
+{
+  "type": "blafecho:growth_chamber",
+  "ingredient": {
+    "item": "minecraft:feather"
+  },
+  "result": {
+    "id": "minecraft:coal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "blafecho:growth_chamber",
+  "ingredient": {
+    "item": "blafecho:raw_pink_garnet"
+  },
+  "result": {
+    "count": 16,
+    "id": "blafecho:pink_garnet"
+  }
+}
